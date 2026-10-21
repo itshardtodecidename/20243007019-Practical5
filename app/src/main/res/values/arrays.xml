@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="municipalities_array">
+        <item>Beijing is the capital of China and the country\'s political,
+            cultural and educational centre. With a history stretching back
+            over three thousand years, it served as the imperial capital
+            for several dynasties. The city is home to world-famous
+            landmarks such as the Forbidden City, the Temple of Heaven,
+            the Summer Palace and sections of the Great Wall. Its
+            traditional hutong alleyways and courtyard houses sit alongside
+            modern skyscrapers and Olympic venues. Beijing hosted the 2008
+            Summer Olympics and the 2022 Winter Olympics, making it the
+            first city to stage both events. Today it has more than
+            twenty-one million residents.</item>
+        <item>Shanghai is China\'s largest city and one of the world\'s
+            most important financial and trading centres. Located at the
+            mouth of the Yangtze River, its port is among the busiest
+            container ports on the planet. The city is famous for the
+            historic Bund waterfront and the futuristic skyline of Pudong,
+            where the Oriental Pearl Tower and Shanghai Tower dominate the
+            view. Once divided into foreign concessions, Shanghai blends
+            European-style architecture with traditional Chinese lanes and
+            ultramodern districts. It hosted the 2010 World Expo and is home
+            to more than twenty-four million people, making it a symbol of
+            China\'s rapid economic growth.</item>
+        <item>Chongqing is a sprawling municipality in southwest China and
+            the largest of the four by area and population. Built on steep
+            hills at the meeting point of the Yangtze and Jialing rivers,
+            it is nicknamed the Mountain City, and its dramatic layered
+            skyline has made it a social-media sensation. Chongqing is
+            renowned across China for its fiery hotpot cuisine. Historically
+            it served as China\'s wartime capital, and today it is a major
+            manufacturing and transport hub and the gateway to Yangtze River
+            cruises through the Three Gorges. More than thirty-two million
+            people live within the municipality\'s boundaries.</item>
+        <item>Tianjin is a major port city in northern China,
+            about thirty minutes from Beijing by high-speed train.
+            Located where the Hai River meets the Bohai Sea, it has long
+            been one of the country\'s most important gateways for trade.
+            In the nineteenth and early twentieth centuries, foreign
+            concessions gave the city a distinctive European flavour,
+            still visible today in the Italian Style Town and the Five reat
+            Avenues district. Modern attractions include the Tianjin Eye
+            Ferris wheel, Ancient Culture Street and the fast-growing Binhai
+            New Area. Tianjin is famous for local snacks such as goubuli
+            buns and jianbing, and is home to around fourteen million
+            residents.</item>
+    </string-array>
+</resources>
