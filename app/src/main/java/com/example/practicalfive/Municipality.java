@@ -1,6 +1,8 @@
 package com.example.practicalfive;
 
-
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -53,8 +55,44 @@ public class Municipality extends AppCompatActivity {
         }
 
         customiseScreen();
+        setupVisitSiteButton();
     }
 
+    /** Wires up the Visit site button to open the official website. */
+    private void setupVisitSiteButton() {
+        buttonVisitSite.setOnClickListener(v -> {
+            String url = getOfficialWebsiteUrl();
+            if (url == null) {
+                return;
+            }
+
+            // Implicit intent: ask Android to open the URL in a suitable app
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            try {
+                startActivity(intent);
+            } catch (ActivityNotFoundException e) {
+                // No browser or suitable app available
+                Toast.makeText(this, "No application available to open the website.",
+                        Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    /** Returns the official website for the currently displayed municipality. */
+    private String getOfficialWebsiteUrl() {
+        switch (municipalityName) {
+            case "Beijing":
+                return "https://english.beijing.gov.cn/";
+            case "Shanghai":
+                return "https://english.shanghai.gov.cn/";
+            case "Tianjin":
+                return "https://en.tj.gov.cn/";
+            case "Chongqing":
+                return "https://english.cq.gov.cn/";
+            default:
+                return null;
+        }
+    }
     /** Sets the name, image, summary and colours for the selected municipality. */
     private void customiseScreen() {
         int colourResId;   // colour resource for this municipality
@@ -105,5 +143,6 @@ public class Municipality extends AppCompatActivity {
         // Visit site button tinted with the same colour
         buttonVisitSite.setBackgroundTintList(
                 android.content.res.ColorStateList.valueOf(colour));
+
     }
 }
